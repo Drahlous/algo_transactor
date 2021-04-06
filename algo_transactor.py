@@ -58,7 +58,6 @@ print("Account Balance: {} micro_algos".format(account_info.get('amount')))
 # ==============
 
 # Create a wallet to receive funds
-receiving_passphrase = "actor purpose funny fetch shadow fox heavy police side snack silent purse illness average whip marble rookie useless mouse dutch involve stick penalty absent step"
 receiving_address = "GD64YIY3TWGDMCNPP553DZPPR6LDUSFQOIJVFDPPXWEG3FVOJCCDBBHU5A"
 
 
@@ -129,6 +128,5 @@ except Exception as err:
 
 print("Transaction information: {}".format(json.dumps(confirmed_txn, indent=4)))
 print("Decoded note: {}".format(base64.b64decode(confirmed_txn["txn"]["txn"]["note"]).decode()))
-
 
 quit()
